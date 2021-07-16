@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: flex-end;
   height: 206px;
-  background-image: url(../images/footer.png);
+  background-image: url(../images/footer-mobile.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,9 +15,14 @@
 
   @include laptop {
     height: 360px;
+    background-image: url(../images/footer-desktop.jpg);
 
     &__link {
       margin-bottom: 35px;
     }
+  }
+
+  @include large-screen {
+    background-image: url(../images/footer-large.jpg);
   }
 }

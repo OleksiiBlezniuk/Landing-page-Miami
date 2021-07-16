@@ -45,6 +45,12 @@
   }
 }
 
+@mixin large-screen {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
+
 @mixin square($size) {
   height: $size;
   width: $size;

@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 20px;
   height: 100vh;
-  background-image: url(../images/header-mobile.png);
+  background-image: url(../images/header-mobile.jpg);
   background-size: cover;
   background-position: center;
   color: $c-white;
@@ -86,8 +86,8 @@
   }
 
   @include laptop {
+    background-image: url(../images/header-desktop.jpg);
     padding: 0;
-    background-image: url(../images/header.png);
 
     &__container {
       box-sizing: border-box;
@@ -137,5 +137,9 @@
       padding: 20px 120px;
       max-width: 1260px;
     }
+  }
+
+  @include large-screen {
+    background-image: url(../images/header-large.jpg);
   }
 }
